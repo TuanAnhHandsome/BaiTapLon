@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A+ web</title>
+    <link rel="stylesheet" href="/tuHoc/position.css">
+    <style>
+        h1 {
+            color:black;
+        }
+    </style>
+ 
+    <style>
+        html {
+            font-size: 20px;
+        }
+        .box{
+            width: 60px;
+            height: 60px;
+            color: aliceblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* vw,vh : ăn theo chiều width height của web*/
+            box-sizing: border-box;
+        }
+        .box1 {
+            background-color: black;
+            margin: 10px 15px;
+            
+        }
+        .box2:active {
+            background-color: rgb(164, 24, 24);
+            /* bấm vào là chuyển màu */
+        }
+        .box3:hover  {
+            border-width: 10px;
+            border-style: solid;
+            border-color: aqua;
+            /* border: 5px solid #0d9a30; 
+            viết tắt
+            hover làm nền chuyển màu hki trỏ vào*/
+            
+           background-color: rgb(210, 111, 11); 
+        }
+        .header{
+            width: 100%;
+            height: 100px;
+            background-color: black;
+            padding: 20px;
+            box-sizing: border-box;
+            border: 10px dashed #ad6e6e;
+            background-clip: border-box;
+            /* backgroud-clip để đổ màu cho phần cần đổ (như trên là đổ từ border) */
+            /* background-image: url(https://vcdn1-dulich.vnecdn.net/2021/07/16/1-1626437591.jpg?w=460&h=0&q=100&dpr=2&fit=crop&s=i2M2IgCcw574LT-bXFY92g );
+            background-size: 100% ;
+            background-repeat: no-repeat;  lặp lại ảnh*/
+        }
+        li::selection{
+            background-color: violet;
+            color: #ffff;
+            /* bôi màu cho vùng */
+        }
+    </style>
+    <script src="javascript.js"></script>
+</head>
+<body>
+    <div class="header"></div>
+    <h1>chào</h1>
+    <h2>xin</h2>
+    <p>to xin chao cac cau</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLdbpbBcTCR6RT-pSjdiGwsDRrUxeqTH5NEA&s" alt="">
+    <a href="https://www.dienmayxanh.com/">Điện máy xanh</a>
+    <ul>
+        <li>
+         coffe   
+        </li>
+        <li>
+         milk
+        </li>
+        <li>
+         coca
+        </li>
+        <li>
+         fruit
+        </li>
+    </ul>
+    <table border="1">
+        <thead>
+            <th>Tên</th>
+            <th>SĐT</th>
+        </thead>
+        <tbody>
+            <tr> 
+                <td>Vũ Tuấn Anh</td>
+                <td>0348193356</td>
+            </tr>
+       
+        </tbody>
+    </table>
+    <div>
+        <input type="text" placeholder="khà khà">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox"> 
+        <input type="radio">
+        <!-- radio chọn 1 thì thêm name -->
+        <input name = "gender" type="radio">
+        <input name = "gender" type="radio">
+        <input name = "gender" type="radio">
+    
+        <button> Đăng Kí </button>
+    </div>
+    <h2 title="Attributes">Bấm Vào Đây </h2>
+   <!-- 3 cách css :
+    1 internal
+    2 external
+    3 inline -->
+    <p style="color: red;">Học Web</p>
+    <div class="box box1">Box 1</div>
+    <div class="box box2">Box 2</div>
+    <div class="box box3">Box 3</div>
+    <h5>Position</h5>
+    <ul>
+        <li>Relative</li>
+        <li>Absolute</li>
+        <li>Fixed</li>
+        <li>Sticky</li>
+    </ul>
+  <div class="box-farther">
+    <div class="box-child"></div>
+  </div>
+</body>
+</html>

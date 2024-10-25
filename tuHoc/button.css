@@ -1,0 +1,42 @@
+
+  
+body > div {
+    margin: auto;
+  }
+.btn {
+    
+    display: inline-block;
+    text-decoration: none;
+    /* xóa gạch chân thẻ a */
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #ffff;
+    min-width: 120px;
+    padding: 12px 48px;
+    border-radius: 50px;
+    cursor: pointer;
+    /* di chuyển và button chuyển thành bàn tay */
+    transition: opacity .2 ease;
+    /* chạm vào màu nhạt đi */
+  }
+  .btn:hover {
+    opacity: 0.8;
+  }
+.btn + .btn {
+    margin-left: 10px;
+}
+.btn--success {
+    background-color:green ;
+}
+.btn--warn{
+    background-color: orange ;
+}
+.btn--danger {
+    background-color: red;
+}
+.btn--disabled {
+    opacity: 0.5 !important;
+    cursor: default;
+    /* làm hiệu ứng k bấm được */
+}
